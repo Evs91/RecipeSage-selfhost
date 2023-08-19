@@ -61,7 +61,7 @@ services:
       - typesensedata:/data
     command: "--data-dir /data --api-key=recipesage_selfhost --enable-cors"
   pushpin: # Provides websocket support
-    image: fanout/pushpin:1.27.0
+    image: zimbres/pushpin:latest
     environment:
       - target=api:3000
     restart: unless-stopped
